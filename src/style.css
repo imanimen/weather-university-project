@@ -99,13 +99,13 @@ img, .cityData, button, input, ::after, ::before, h2{
 
 .cityData{
   text-align: left;
-  /* background-color: #22222221; */
+  background-color: #22222221;
   width: fit-content;
   min-width: 375px;
   min-height: 427px;
   padding: 12px 24px;
   border-radius: 12px;
-  /* border: 1px solid #aeacac67; */
+  border: 1px solid #aeacac67;
   transition: all 0.3s ease-in-out;
   position: relative;
   overflow: hidden;
@@ -118,7 +118,7 @@ img, .cityData, button, input, ::after, ::before, h2{
   opacity: .8;
 
   animation-name: entering-form-left;
-  animation-duration: 0.5s;
+  animation-duration: 2s;
   animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
   animation-fill-mode: forwards;
 }
@@ -127,10 +127,10 @@ img, .cityData, button, input, ::after, ::before, h2{
   opacity: .8;
 
   animation-name: entering-form-right;
-  animation-duration: 0.5s;
+  animation-duration: 2s;
   animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
   animation-fill-mode: forwards;
-  animation-delay: .5s;
+  animation-delay: 2s;
 }
 
 .cityData.thirdCity{
@@ -138,10 +138,10 @@ img, .cityData, button, input, ::after, ::before, h2{
   opacity: .8;
 
   animation-name: entering-form-right-mini;
-  animation-duration: 0.5s;
+  animation-duration: 2s;
   animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
   animation-fill-mode: forwards;
-  animation-delay: .5s;
+  animation-delay: 4s;
 }
 
 @keyframes entering-form-left {

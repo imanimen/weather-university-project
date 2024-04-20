@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Weather App</h2>
+    <input
+        type="text"
+        value=''
+        placeholder="city names separated by commas"
+        class="centeredInput searchInput"
+    />
+
+    <!-- function evalute the current input (has three city with (, separated)..) if falsy => add "disabled"-class to it and also add disabled as attribute button -->
+    <button class="btn-getweather disabled">Get Weather</button>
+
+    <div class="resultsBox">
+      <!-- have loops on cities and append own class for animation entering -->
+      <!-- also the weather icon is switch case function for return the local icon related to response as input string -->
+        <div class='cityData firstCity'>
+          <img class="weather-icon" src="/weathericons/sunny.svg" alt="">
+          <div class="_content">
+            <h3 class="_location">Tehran</h3>
+            <p class="_description">HAVA IS GOOD</p>
+            <p class="_temperature">20</p>
+            <p class="_humidity">Humidity ~ 10%</p>
+          </div>
+        </div>
+
+        <div class='cityData secondCity'>
+          <img class="weather-icon" src="/weathericons/rainy.svg" alt="">
+          <div class="_content">
+            <h3 class="_location">Rasht</h3>
+            <p class="_description">HAVA IS WELL</p>
+            <p class="_temperature">11</p>
+            <p class="_humidity">Humidity ~ 75%</p>
+          </div>
+        </div>
+
+        <div class='cityData thirdCity'>
+          <img class="weather-icon" src="/weathericons/cloudsunny.svg" alt="">
+          <div class="_content">
+            <h3 class="_location">Tabriz</h3>
+            <p class="_description">HAVA IS OK</p>
+            <p class="_temperature">15</p>
+            <p class="_humidity">Humidity ~ 34%</p>
+          </div>
+        </div>
+      <!-- have loops on cities and append own class for animation entering -->
+
+    </div>
+  </div>
+</body>
+</html>
+
