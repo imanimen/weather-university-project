@@ -1,7 +1,10 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import requests
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
 app = FastAPI()
 
 app.add_middleware(
@@ -13,7 +16,7 @@ app.add_middleware(
 )
 
 def get_weather(city):
-    api_key = "7df55745b3524612459191758eadb049"  # Replace this with your actual API key
+    api_key =   os.getenv("API_KEY") # Replace this with your actual API key
     url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
     
     response = requests.get(url)
